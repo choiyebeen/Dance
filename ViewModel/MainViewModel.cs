@@ -24,7 +24,6 @@ namespace Dance.ViewModel
         Dictionary<string, List<string>> m_dic;
         Dictionary<string, List<string>> m_selected_right_listbox;
         List<string> m_song;
-        Dictionary<string, List<string>> m_complete_selection;
 
         public string Song1 { get; set; }
         public string Song1People { get; set; }
@@ -36,6 +35,27 @@ namespace Dance.ViewModel
         public string Song4People { get; set; }
         public string Song5 { get; set; }
         public string Song5People { get; set; }
+        public string Song6 { get; set; }
+        public string Song6People { get; set; }
+        public string Song7 { get; set; }
+        public string Song7People { get; set; }
+        public string Song8 { get; set; }
+        public string Song8People { get; set; }
+        public string Song9 { get; set; }
+        public string Song9People { get; set; }
+        public string Song10 { get; set; }
+        public string Song10People { get; set; }
+        public string Song11 { get; set; }
+        public string Song11People { get; set; }
+        public string Song12 { get; set; }
+        public string Song12People { get; set; }
+        public string Song13 { get; set; }
+        public string Song13People { get; set; }
+        public string Song14 { get; set; }
+        public string Song14People { get; set; }
+        public string Song15 { get; set; }
+        public string Song15People { get; set; }
+
 
         public void InitExcel()
         {
@@ -141,13 +161,14 @@ namespace Dance.ViewModel
                 m_complete_song_list.Add(topSong.Key);
                 m_complete_song_people_list.Add(string.Join(" ", topSong.Value));
 
-                foreach (var person in peopleInTopSong)
-                {
-                    foreach (var song in songAndMembers.Keys.ToList())
-                    {
-                        songAndMembers[song].Remove(person);
-                    }
-                }
+                //중복 제외시 
+                //foreach (var person in peopleInTopSong)
+               // {
+                  //  foreach (var song in songAndMembers.Keys.ToList())
+                  //  {
+                        //songAndMembers[song].Remove(person);
+                  //  }
+               // }
 
                 // 곡명 제거
                 songAndMembers.Remove(topSong.Key);
@@ -161,11 +182,32 @@ namespace Dance.ViewModel
             Song3 = m_complete_song_list.ElementAtOrDefault(2);
             Song4 = m_complete_song_list.ElementAtOrDefault(3);
             Song5 = m_complete_song_list.ElementAtOrDefault(4);
+            Song6 = m_complete_song_list.ElementAtOrDefault(5);
+            Song7 = m_complete_song_list.ElementAtOrDefault(6);
+            Song8 = m_complete_song_list.ElementAtOrDefault(7);
+            Song9 = m_complete_song_list.ElementAtOrDefault(8);
+            Song10 = m_complete_song_list.ElementAtOrDefault(9);
+            Song11 = m_complete_song_list.ElementAtOrDefault(10);
+            Song12 = m_complete_song_list.ElementAtOrDefault(11);
+            Song13= m_complete_song_list.ElementAtOrDefault(12);
+            Song14 = m_complete_song_list.ElementAtOrDefault(13);
+            Song15 = m_complete_song_list.ElementAtOrDefault(14);
+
             Song1People = m_complete_song_people_list.ElementAtOrDefault(0);
             Song2People = m_complete_song_people_list.ElementAtOrDefault(1);
             Song3People = m_complete_song_people_list.ElementAtOrDefault(2);
             Song4People = m_complete_song_people_list.ElementAtOrDefault(3);
             Song5People = m_complete_song_people_list.ElementAtOrDefault(4);
+            Song6People = m_complete_song_people_list.ElementAtOrDefault(5);
+            Song7People = m_complete_song_people_list.ElementAtOrDefault(6);
+            Song8People = m_complete_song_people_list.ElementAtOrDefault(7);
+            Song9People = m_complete_song_people_list.ElementAtOrDefault(8);
+            Song10People = m_complete_song_people_list.ElementAtOrDefault(9);
+            Song11People = m_complete_song_people_list.ElementAtOrDefault(10);
+            Song12People = m_complete_song_people_list.ElementAtOrDefault(11);
+            Song13People = m_complete_song_people_list.ElementAtOrDefault(12);
+            Song14People = m_complete_song_people_list.ElementAtOrDefault(13);
+            Song15People = m_complete_song_people_list.ElementAtOrDefault(14);
 
             OnPropertyChanged(nameof(Song1));
             OnPropertyChanged(nameof(Song1People));
@@ -177,6 +219,26 @@ namespace Dance.ViewModel
             OnPropertyChanged(nameof(Song4People));
             OnPropertyChanged(nameof(Song5));
             OnPropertyChanged(nameof(Song5People));
+            OnPropertyChanged(nameof(Song6));
+            OnPropertyChanged(nameof(Song6People));
+            OnPropertyChanged(nameof(Song7));
+            OnPropertyChanged(nameof(Song7People));
+            OnPropertyChanged(nameof(Song8));
+            OnPropertyChanged(nameof(Song8People));
+            OnPropertyChanged(nameof(Song9));
+            OnPropertyChanged(nameof(Song9People));
+            OnPropertyChanged(nameof(Song10));
+            OnPropertyChanged(nameof(Song10People));
+            OnPropertyChanged(nameof(Song11));
+            OnPropertyChanged(nameof(Song11People));
+            OnPropertyChanged(nameof(Song12));
+            OnPropertyChanged(nameof(Song12People));
+            OnPropertyChanged(nameof(Song13));
+            OnPropertyChanged(nameof(Song13People));
+            OnPropertyChanged(nameof(Song14));
+            OnPropertyChanged(nameof(Song14People));
+            OnPropertyChanged(nameof(Song15));
+            OnPropertyChanged(nameof(Song15People));
         }
 
         public void LeftToRight(List<string> selectedItems)

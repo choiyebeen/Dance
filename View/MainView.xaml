@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Dance.View"
         xmlns:vm="clr-namespace:Dance.ViewModel"
         mc:Ignorable="d"
-        Title="Team Blank" Height="800" Width="800" ResizeMode="NoResize">
+        Title="Team Blank" Height="950" Width="850" >
     <Window.DataContext>
         <vm:MainViewModel/>
     </Window.DataContext>
@@ -23,38 +23,114 @@
         <ListBox x:Name="RightListBox" ItemsSource="{Binding SelectNames}" Width="300" Height="370" HorizontalAlignment="Right" SelectionMode="Multiple" VerticalAlignment="Top" Margin="0,35,0,0"/>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,420,0,0">
-            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="200" VerticalAlignment="Top">
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="{Binding Song1}" FontSize="24"/>
                     <TextBlock Text="{Binding Song1People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
                 </StackPanel>
             </Border>
 
-            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="200" VerticalAlignment="Top">
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="{Binding Song2}" FontSize="24"/>
                     <TextBlock Text="{Binding Song2People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
                 </StackPanel>
             </Border>
 
-            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="200" VerticalAlignment="Top">
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="{Binding Song3}" FontSize="24"/>
                     <TextBlock Text="{Binding Song3People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
                 </StackPanel>
             </Border>
 
-            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="200" VerticalAlignment="Top">
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="{Binding Song4}" FontSize="24"/>
                     <TextBlock Text="{Binding Song4People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
                 </StackPanel>
             </Border>
 
-            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="200" VerticalAlignment="Top">
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="{Binding Song5}" FontSize="24"/>
                     <TextBlock Text="{Binding Song5People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,580,0,0">
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding Song6}" FontSize="24"/>
+                    <TextBlock Text="{Binding Song6People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding Song7}" FontSize="24"/>
+                    <TextBlock Text="{Binding Song7People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding Song8}" FontSize="24"/>
+                    <TextBlock Text="{Binding Song8People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding Song9}" FontSize="24"/>
+                    <TextBlock Text="{Binding Song9People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding Song10}" FontSize="24"/>
+                    <TextBlock Text="{Binding Song10People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,740,0,0">
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding Song11}" FontSize="24"/>
+                    <TextBlock Text="{Binding Song11People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding Song12}" FontSize="24"/>
+                    <TextBlock Text="{Binding Song12People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding Song13}" FontSize="24"/>
+                    <TextBlock Text="{Binding Song13People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding Song14}" FontSize="24"/>
+                    <TextBlock Text="{Binding Song14People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Purple" BorderThickness="1" Padding="10" Height="150" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="{Binding Song15}" FontSize="24"/>
+                    <TextBlock Text="{Binding Song15People}" FontSize="16" Width="135" TextWrapping="Wrap"/>
                 </StackPanel>
             </Border>
         </StackPanel>
